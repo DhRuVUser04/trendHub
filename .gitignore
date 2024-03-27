@@ -1,0 +1,24 @@
+# dependencies
+/website/node_modules
+/website/.pnp
+/website/pnp.js
+/website/yarn/install-state.gz
+
+# local env files
+.env*.local
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# production
+/website/build
+
+# next.js
+website/.next/
+website/out/
