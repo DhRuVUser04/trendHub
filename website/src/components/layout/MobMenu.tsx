@@ -37,7 +37,7 @@ const itemData = [
 
 export default function MobMenu() {
   return (
-    <div className="fixed bottom-4 w-full left-0">
+    <div className="lg:hidden fixed bottom-4 w-full left-0">
       <MaxWidthWrapper>
         <div className="flex items-center justify-evenly h-16 w-full rounded-full bg-white drop-shadow-2xl shadow-2xl px-3">
           {itemData?.map((item, index) => (
