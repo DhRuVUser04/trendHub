@@ -5,6 +5,7 @@ import { useSession } from "next-auth/react";
 import { usePathname, useRouter } from "next/navigation";
 import ScrollToTop from "react-scroll-to-top";
 import Header from "../layout/Header";
+import MobMenu from "../layout/MobMenu";
 // import VerifyBar from "../layout/VerifyBar";
 
 export default function LayoutProvider({
@@ -24,6 +25,7 @@ export default function LayoutProvider({
       {/* {session?.user.verified === false && <VerifyBar session={session} />} */}
       <Header />
       <div className="">{children}</div>
+      <MobMenu />
       <ScrollToTop smooth />
     </>
   );
