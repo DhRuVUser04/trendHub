@@ -69,17 +69,16 @@ export const authOptions = {
         }
       },
     }),
-    GoogleProvider({
-      clientId: process.env.GOOGLE_CLIENT_ID as string,
-      clientSecret: process.env.GOOGLE_CLIENT_SECRET as string,
-    }),
+    // GoogleProvider({
+    //   clientId: process.env.GOOGLE_CLIENT_ID as string,
+    //   clientSecret: process.env.GOOGLE_CLIENT_SECRET as string,
+    // }),
   ],
   pages: {
     signIn: "/auth/login",
     error: "/auth/error",
     verifyRequest: "/auth/verify",
-      newUser: "/auth/new", 
-      
+    newUser: "/auth/new",
   },
   callbacks: {
     async signIn({ user, account }: { user: any; account: any }) {

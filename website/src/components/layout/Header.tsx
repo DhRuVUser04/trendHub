@@ -16,9 +16,11 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
+import { useSession } from "next-auth/react";
 
 export default function Header() {
   const [open, setOpen] = React.useState(false);
+  const { data: session } = useSession();
   return (
     <>
       <header>
@@ -49,9 +51,11 @@ export default function Header() {
               <Button size={"icon"} variant={"ghost"}>
                 <IoCartOutline className="text-2xl" />
               </Button>
-              <Button size={"icon"} variant={"ghost"}>
-                <IoPersonOutline className="text-2xl" />
-              </Button>
+              <Link href={session ? "/account" : "/auth/login"}>
+                <Button size={"icon"} variant={"ghost"}>
+                  <IoPersonOutline className="text-2xl" />
+                </Button>
+              </Link>
             </div>
           </div>
         </MaxWidthWrapper>
