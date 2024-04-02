@@ -14,7 +14,7 @@ export default function HeroComp() {
               - Hoodie Collection
             </h4>
             <h2 className="text-xl font-bold lg:text-4xl lg:font-semibold mb-3 lg:mb-4">
-              We Offer the Best
+              We offer the Best
               <br />
               Hoodies For You
             </h2>
